@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piešimas ant veidelių</title>
-    <link href="style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap" rel="stylesheet">
-
-    
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piešimo magija</title>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="plus-icon.ico"> 
+        <link rel="shortcut icon" href="plus-icon.ico"> <!-- Fallback for older browsers -->
+    </head>
 
 <body>
     <header>
         <table>
             <td>
-                <img height="100" src=piesimo_magija.jpg>
+                <img height="100" src=pmlogo.png>
             </td>
             <td>
                 <h1 style="margin: 0">Piešimo magija</h1>
-                <h4 style="margin: 0">Akimirka magijos jūsų šventei!</h4>
+                <h4 style="margin: 0">Spalvingas veidų bei rankų piešimas!</h4>
             </td>
         </table>
     </header>
@@ -27,8 +27,8 @@
         <a href="kainos.html">Kainos</a>
         <a href="kontaktai.html" class="active">Kontaktai</a>
     </nav>
-
-<main>
+    <img alt="teptukas" src="brush-1.png" style="margin-left: 15%; width: 800px; height: auto;">
+<main class="bg-page">
     <h2>Kontaktai</h2>
     <p style="text-align: justify;">Turite klausimų ar norite sužinoti daugiau apie mūsų paslaugas? Susisiekite su mumis – padėsime rasti geriausią sprendimą ir atsakysime į visus iškilusius klausimus. </p>
 <table style="vertical-align:center; font-weight: bold;">
@@ -50,7 +50,7 @@
 
     <!--Lentele su kontaktų forma--> 
 
-    <table class="cell-bg";> 
+    <table> 
         <tr>
             <td colspan="3">
                 <label>Jūsų vardas:</label>
@@ -58,30 +58,29 @@
         </tr>
         <tr>
             <td colspan="3" style="padding-bottom: 18px;">
-                <input style="height:22px; width:100%;">
+                <input style="width:100%;" placeholder="Var... ">
             </td>
         </tr>
         <tr>
             <td colspan="3">
-                <label>Kaip su jumis susisiekti? 
-                <br>Telefono numeris arba emailas:</label>
+                <label>Kaip su jumis susisiekti? </label><br>
+                <label>Telefono numeris arba emailas:</label>
             </td>
         </tr>
         <tr>
             <td colspan="3" style="padding-bottom: 18px;">
-                <input required style="height:22px; width:100%">
+                <input required style="width:100%" placeholder="+370... ">
             </td>
         </tr>
         <tr>
             <td style="width: 33%"><label>Renginio data: </label></td>
-            <td style="width: 33%; padding-left: 4px;" ><label>Renginio pradžia: </label></td>
-            <td style="width: 33%; padding-left: 4px;"><label>Trukmė, val.: </label></td>
+            <td style="width: 33%; padding-left: 12px;" ><label>Renginio pradžia: </label></td>
+            <td style="width: 33%; padding-left: 12px;"><label>Trukmė, val.: </label></td>
         </tr>
         <tr>
             <td style="padding-bottom: 18px;"><input style="width:100%" type="date" aria-label="Pasirikti renginio datą"></td>
-            <td style="padding-bottom: 18px; padding-left: 4px;"><select style="width:100%" aria-label="Pasirinkti, kurią valandą prasideda renginys">
+            <td style="padding-bottom: 18px; padding-left: 12px;"><select style="width:100%" aria-label="Pasirinkti, kurią valandą prasideda renginys">
                     <option value="00">00:00</option>
-
                     <option value="08">08:00</option>
                     <option value="09">09:00</option>
                     <option value="10">10:00</option>
@@ -99,7 +98,7 @@
 
                 </select>
             </td>
-            <td style="padding-bottom: 18px; padding-left: 4px;"><select style="width:100%" aria-label="Pasirinkti, kiek laiko truks renginys">
+            <td style="padding-bottom: 18px; padding-left: 12px;"><select style="width:100%" aria-label="Pasirinkti, kiek laiko truks renginys">
                 <option value="00">0</option>
                 <option value="01">1</option>
                 <option value="02">2</option>
@@ -114,13 +113,13 @@
         </tr>
         <tr>
             <td colspan="3" style="padding-bottom: 18px;">
-                <textarea style="width: 100%; height: 75px;"></textarea>
+                <textarea></textarea>
             </td>
         </tr>
         <tr>
             <td colspan="3">
                 <form>
-                <input type="submit" value="Pateikti" style="border: 2px solid #ffffff; background-color: transparent;"/>
+                <input type="submit" value="Pateikti"/>
                 </b>
                 </form>
             </td>
