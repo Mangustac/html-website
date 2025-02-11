@@ -6,11 +6,7 @@ _ _ _
 
 _ _ _
 
-_ _ _
-
 <img width="800" alt="Screenshot 2025-02-11 at 15 24 03" src="https://github.com/user-attachments/assets/9314ca61-211f-459d-b1c7-6d96ca0cdcbf" />
-
-_ _ _
 
 _ _ _
 
