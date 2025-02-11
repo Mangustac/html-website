@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piešimas ant veidelių</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap" rel="stylesheet">
+
+    
 </head>
+
 <body>
     <header>
         <table>
@@ -12,70 +17,128 @@
                 <img height="100" src=piesimo_magija.jpg>
             </td>
             <td>
-        <h1>Piešimo magija</h1>
+                <h1 style="margin: 0">Piešimo magija</h1>
+                <h4 style="margin: 0">Akimirka magijos jūsų šventei!</h4>
             </td>
         </table>
-        <nav>
-            <a href="index.html">Apie mus</a>
-            <a href="kainos.html">Kainos</a>
-            <a href="kontaktai.html"><b>Kontaktai</b></a>
-        </nav>
     </header>
-<hr>
+    <nav>
+        <a href="index.html">Apie mus</a>
+        <a href="kainos.html">Kainos</a>
+        <a href="kontaktai.html" class="active">Kontaktai</a>
+    </nav>
 
-<table>
+<main>
+    <h2>Kontaktai</h2>
+    <p style="text-align: justify;">Turite klausimų ar norite sužinoti daugiau apie mūsų paslaugas? Susisiekite su mumis – padėsime rasti geriausią sprendimą ir atsakysime į visus iškilusius klausimus. </p>
+<table style="vertical-align:center; font-weight: bold;">
     <tr>
-        <td style="width:50%"><h2>Kontaktai</h2></td>
-        <td style="width:50%"><h2>Parašykite mums</h2></td>
+        <td style="padding-right: 8px;"><img height="32px" src=Envelope-icon-G.png></td>
+        <td>info@info.lt</td>
+    </tr>
     <tr>
-        <td>Turite klausimų ar norite sužinoti daugiau apie mūsų paslaugas? Susisiekite su mumis – padėsime rasti geriausią sprendimą ir atsakysime į visus jums rūpimus klausimus.
-        <br>
-            <ul style="list-style-type:none;">
-                <li>✉️&emsp;info@piesimomagija.lt
-                <li>📞&emsp;+370 12345678
-                <li>📌&emsp;Vilnius
-            </ul>
-        <img height="200" src=phone_magic.jpeg>
-        </td>
-        <td>
-            <!--Lentele su kontaktų forma--> 
-
-            <label>Jūsų vardas:</label>
-            <br><input style="height:22px; width:98%">
-            <br><br>
-            <label>Kaip su jumis susisiekti? Telefono numeris arba emailas:</label>
-            <br><input required style="height:22px; width:98%">
-            <br><br>
-                <table>
-                    <tr>
-                        <td style="width: 30%">Renginio data: </td>
-                        <td style="width: 30%">Renginio pradžia: </td>
-                        <td style="width: 30%">Trukmė, val.: </td>
-                    </tr>
-                    <tr>
-                        <td><input style="height:24px; width:96%" type="date"> </td>
-                        <td><input style="height:24px; width:96%" type="time"> </td>
-                        <td><input style="height:22px; width:96%" type="number"></td>
-                    </tr>
-                </table>
-            <br><br>
-            <label>Žinutė mums:</label>
-            <br><textarea style="width: 98%; height: 75px;"></textarea>
-            <br><br>
-            <form>
-            <input type="submit" value="Pateikti"/>
-            </form>
-        </td>
+        <td style="padding-right: 8px;"><img height="32px" src=Phone-icon-G.png></td>
+        <td>+370 12345678</td>
+    </tr>
+    <tr>
+        <td style="padding-right: 8px;"><img height="32px" src=Location-icon-G.png></td>
+        <td>Vilnius</td>
     </tr>
 </table>
 
-<hr>
+    <h2 style="padding-bottom: 16pt;">Parašykite mums</h2>
+
+    <!--Lentele su kontaktų forma--> 
+
+    <table class="cell-bg";> 
+        <tr>
+            <td colspan="3">
+                <label>Jūsų vardas:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding-bottom: 18px;">
+                <input style="height:22px; width:100%;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <label>Kaip su jumis susisiekti? 
+                <br>Telefono numeris arba emailas:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding-bottom: 18px;">
+                <input required style="height:22px; width:100%">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 33%"><label>Renginio data: </label></td>
+            <td style="width: 33%; padding-left: 4px;" ><label>Renginio pradžia: </label></td>
+            <td style="width: 33%; padding-left: 4px;"><label>Trukmė, val.: </label></td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 18px;"><input style="width:100%" type="date" aria-label="Pasirikti renginio datą"></td>
+            <td style="padding-bottom: 18px; padding-left: 4px;"><select style="width:100%" aria-label="Pasirinkti, kurią valandą prasideda renginys">
+                    <option value="00">00:00</option>
+
+                    <option value="08">08:00</option>
+                    <option value="09">09:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                    <option value="14">14:00</option>
+                    <option value="15">15:00</option>
+                    <option value="16">16:00</option>
+                    <option value="17">17:00</option>
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                    <option value="20">20:00</option>
+                    <option value="21">21:00</option>
+
+                </select>
+            </td>
+            <td style="padding-bottom: 18px; padding-left: 4px;"><select style="width:100%" aria-label="Pasirinkti, kiek laiko truks renginys">
+                <option value="00">0</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+                <option value="04">4</option>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <label>Žinutė mums:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding-bottom: 18px;">
+                <textarea style="width: 100%; height: 75px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form>
+                <input type="submit" value="Pateikti" style="border: 2px solid #ffffff; background-color: transparent;"/>
+                </b>
+                </form>
+            </td>
+        </tr>
+</table>
+<br><br>
+
+</main>
     <footer>
-        <h6>
-           Ⓒ 2025 Piešimo magija
-           <br>
-           Visos teisės saugomos
+        <h6 style="margin-bottom: 0pt">
+            Ⓒ 2025 Goda Čič
+            <br>
+            Visos teisės saugomos
         </h6>
+            <p style="font-size: 10pt">
+            Susisiek: info@info.lt +370 12345678
+            <p>
     </footer>
+
 </body>
 </html>
