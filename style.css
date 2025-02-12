@@ -18,7 +18,7 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 32pt;
-    filter: drop-shadow(0.5px 0.5px 0px #41266d);
+    text-shadow: 0.5px 0.5px 0px #41266d;
 }
 
 h2{
@@ -30,7 +30,7 @@ h2{
     -webkit-text-fill-color: transparent;
     font-size: 24pt;
     margin: 24px 0 0 0;
-    filter: drop-shadow(0.5px 0.5px 0px #41266d);
+    text-shadow: 0.5px 0.5px 0px #41266d;
 }
 
 h4 {
@@ -84,7 +84,7 @@ height: auto;
 }
 
 @media (max-width: 460px) { 
-    a {
+    nav a {
         font-size: 9pt;
         height: 60px; 
         width: 60px; 
@@ -322,7 +322,7 @@ h3{
     margin: 8px; 
     padding: 0; 
     line-height: 1; 
-    filter: drop-shadow(0.5px 0.5px 0px #41266d);
+    text-shadow: 0.5px 0.5px 0px #41266d;
     transition: 0.3s ease-in-out;
 }
 
