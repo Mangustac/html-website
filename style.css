@@ -49,7 +49,7 @@ nav {
     margin-right: 5%;
 }
 
-a {
+nav a {
     color: #41266D;
     text-decoration: none;
     font-weight: bold;
@@ -70,13 +70,6 @@ a {
     transition: 0.3s ease-in-out;
     white-space: nowrap; /* Prevent text from wrapping */
 }
-
-/* a img {
-    width: 32px;
-    height: auto;
-    margin-top: 6px;
-    margin-bottom: 0px;
-} */
 
 a:hover, a.active {
     text-shadow: 0.5px 0.5px 0px #ffffff;
@@ -115,8 +108,6 @@ height: auto;
 }
 
 
-
-
 /* BODY ELEMENTS */
 
 img {
@@ -129,7 +120,6 @@ body{
     color:#41266d;
     line-height: 1.3; 
     font-family: "Bellota", sans-serif;
-    /* cursor: url('dots.png'), auto; */
 }
 
 /* Change cursor when hovering over links */
@@ -153,13 +143,13 @@ main{
     background-repeat: no-repeat;
     margin-right: 0;
 
-    animation: slideFadeIn 0.5s ease-in-out forwards;
+    animation: slideFadeIn 0.5s ease-out forwards;
 }
 
 /* Keyframes for sliding in and fading in */
 @keyframes slideFadeIn {
     from {
-        background-position: 100vw 180px; /* Start off-screen */   
+        background-position: 800px 180px; /* Start off-screen */   
     }
     80%{
         background-position: 460px 180px;
@@ -183,7 +173,6 @@ h2{
 .content-container {
     display: flex;
     flex-wrap: nowrap; /* Keeps text and image in a row */
-    /* align-items: stretch; Ensures all sections take the same height */
     max-width: 960px;
     
 }
@@ -220,11 +209,10 @@ h2{
 .image-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive: 1, 2, or 3 per row */
-    gap: 12px; /* Space between images */
+    gap: 12px;
     justify-content: center;
-    margin-bottom: 12px; /* Space after the container */
+    margin-bottom: 12px;
     max-width: 960px;
-    /* overflow: hidden; */
 }
 
 .image-container div {
@@ -241,14 +229,14 @@ h2{
 }
 
 .image-container div:hover img {
-    transform: scale(1.1); /* Zoom effect */
+    transform: scale(1.1); 
 }
 
 .video-container {
     max-width: 960px;
     aspect-ratio: 16 / 9;
     border-radius: 20px;
-    overflow: hidden; /* Clips the rounded corners */
+    overflow: hidden; 
 }
 
 .video-container iframe {
@@ -259,13 +247,6 @@ h2{
 .video-container {
     margin-bottom: 40px;
 } }
-
-
-/* Stagger animation for each image */
-.image-container img:nth-child(1) { animation-delay: 0s; }
-.image-container img:nth-child(2) { animation-delay: 0.2s; }
-.image-container img:nth-child(3) { animation-delay: 0.4s; }
-.image-container img:nth-child(4) { animation-delay: 0.6s; }
 
 
 /* ADDING LOGO AUTOMATICALLY TO EVERY IMAGE */
@@ -437,7 +418,6 @@ input[type="submit"] {
   
     transform: scale(0);
     animation: growIn 0.5s ease-out forwards;
-    transition: transform 0.3s ease-out;
 }
 
 /* Keyframes for growing effect */
@@ -447,6 +427,9 @@ input[type="submit"] {
     }
     85% {
         transform: scale(1.1);
+    }
+    90% {
+        transform: scale(1.15);
     }
     to {
         transform: scale(1);
