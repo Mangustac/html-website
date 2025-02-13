@@ -1,4 +1,4 @@
-Created a unique website design and implemented in on website, also added some animation. 
+Created a unique website design and implemented in on coded HTML and CSS, also added some animation. 
 
 _ _ _
 
