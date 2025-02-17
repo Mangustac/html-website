@@ -4,6 +4,9 @@ html, body {
     overflow-x: hidden;
 }
 
+a {
+    color: #41266D;
+}
 
 /* HEADER */
 header{
@@ -39,8 +42,6 @@ h1::before {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 
 
 h2{
@@ -166,9 +167,9 @@ main{
     background-position: 100vw 180px; /* Start from off-screen (right side) */
     background-repeat: no-repeat;
     margin-right: 0;
-
     animation: slideFadeIn 0.5s ease-out forwards;
 }
+
 
 /* Keyframes for sliding in and fading in */
 @keyframes slideFadeIn {
@@ -182,6 +183,29 @@ main{
         background-position: 500px 180px; /* End position */
     }
 }
+
+@media (max-width: 514px) { 
+    .bg-page {
+        background-size: 260px;
+        background-position: 100vw 185px;  /* Start from off-screen (right side) */
+        background-repeat: no-repeat;
+        margin-right: 0;
+    }
+
+/* Keyframes for sliding in and fading in */
+@keyframes slideFadeIn {
+    from {
+        background-position: 500px 185px; /* Start off-screen */   
+    }
+    80%{
+        background-position: 180px 185px;
+    }
+    to {
+        background-position: 220px 185px; /* End position */
+    }
+} }
+
+
 
 p{
     max-width: 840px;
@@ -307,6 +331,7 @@ h2{
     background-position: center;
     border-radius: 50%; /* Keep rounded corners */
     font-size: 16pt;
+    font-weight: bold;
     height: 132px; /* Fixed height */
     width: 132px; /* Fixed width */
     display: flex; /* Enables flexbox */
@@ -376,13 +401,13 @@ h3{
 }
 
 
-@media (max-width: 440px) { 
+@media (max-width: 460px) { 
     h3{
         font-size: 20pt;
         padding: 0pt;
-        margin: 0pt;
+        margin: 4pt;
     }
-    .time{
+    .time p{
         font-size: 16pt;
     }
     .time:hover {
@@ -392,8 +417,8 @@ h3{
     .time:hover h3 {
         color: #d32971; 
         font-size: 20pt; 
-        transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transition */
-        transition: border 0.3s ease, color 0.3s ease; /* Smooth transition */
+        transition: font-size 0.3s ease, color 0.3s ease; 
+        transition: border 0.3s ease, color 0.3s ease; 
     }
 }
 
@@ -408,6 +433,11 @@ footer{
     padding-top: 4px;
     padding-bottom: 24px;
     background-position: center;
+    
+}
+
+footer a {
+    color: #ffffff;
 }
 
 h6{
